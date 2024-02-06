@@ -1,0 +1,86 @@
+:root {
+  --WhiteMainColor:#FFFFFF;
+  --GreenColor:#59E391;
+  --BlackColor:#0B2434;
+  --LiteGray:#4A4E74;
+  --BlueColor:#5035FF;
+  --SecondWhiteColor:#F5F5F5;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+/* Start  Media queries */
+@media (max-width: 768px) {
+  .small-container{
+    background-color: var(--SecondWhiteColor);
+  }
+}
+
+/* End Media queries */
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+#root{
+  /* background-color: green; */
+  background-color: var(--BlackColor);
+  padding: 30px;
+}
+.container {
+  max-width: 320px;
+}
+/* End of Global Rules */
+.small-container{
+  background-color: var(--SecondWhiteColor);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding:0 10px;
+}
+.small-container h1{
+  text-align: center;
+  margin-top: 20px;
+}
+.small-container p{
+  text-align: center;
+  color:var(--LiteGray);
+  font-size: 1.2rem;
+}
+.boxes-container{
+  display: grid;
+  grid-template-columns: auto auto auto  auto auto;
+  gap: 10px;
+}
+.boxes-container h2{
+  text-align: center;
+  background-color: var(--WhiteMainColor);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding:5px;
+  cursor: pointer;
+}
+.small-container button{
+  border: none;
+  background-color: var(--BlueColor);
+  width: 45%;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--WhiteMainColor);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
