@@ -3,7 +3,7 @@ import Box from "./Components/Box";
 import Boxes from "./Components/Boxes";
 
 function GenerateRandomNumber() {
-  return Math.floor(Math.random() * 9 + 1);
+  return Math.floor(Math.random() * 6 + 1);
 }
 export {GenerateRandomNumber}
 function App() {
